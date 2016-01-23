@@ -12,10 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-
-
+	
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-		// Override point for customization after application launch.
+		
+		let eventsTableVC = EventsTableViewController(nibName: "EventsTableViewController", bundle: nil)
+		let eventsNavController = UINavigationController(rootViewController: eventsTableVC)
+		
+		window = UIWindow(frame: UIScreen.mainScreen().bounds)
+		window?.rootViewController = eventsNavController
+		window?.makeKeyAndVisible()
+		
 		return true
 	}
 
