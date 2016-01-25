@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AboutFooterCell" customModule="UniversityPrograms" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMZ-6a-7Qv">
+                        <rect key="frame" x="89" y="7" width="67" height="30"/>
+                        <state key="normal" title="Facebook"/>
+                        <connections>
+                            <action selector="facebookButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ADO-es-Ia9"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pde-Hf-XGU">
+                        <rect key="frame" x="174" y="7" width="48" height="30"/>
+                        <state key="normal" title="Twitter"/>
+                        <connections>
+                            <action selector="twitterButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sQU-xj-UNv"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="vMZ-6a-7Qv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="f0L-jI-RDV"/>
+                    <constraint firstItem="Pde-Hf-XGU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="37.5" id="lcb-9d-Wja"/>
+                    <constraint firstItem="Pde-Hf-XGU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ooJ-Oa-0kp"/>
+                    <constraint firstItem="vMZ-6a-7Qv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-37.5" id="wBV-CQ-pj8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+    </objects>
+</document>

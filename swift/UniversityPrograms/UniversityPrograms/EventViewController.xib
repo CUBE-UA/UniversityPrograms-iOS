@@ -7,6 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventViewController" customModule="UniversityPrograms" customModuleProvider="target">
             <connections>
+                <outlet property="commentTableView" destination="xEm-75-CYe" id="hkJ-5t-tZk"/>
+                <outlet property="descriptionLabel" destination="7aQ-7D-D1o" id="fWL-RP-NEm"/>
+                <outlet property="eventImageView" destination="BVD-Be-Tjs" id="Qny-rR-nev"/>
+                <outlet property="locationLabel" destination="bQW-Tk-xda" id="vPY-44-d5D"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +18,45 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BVD-Be-Tjs">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQW-Tk-xda">
+                    <rect key="frame" x="8" y="170" width="61" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xEm-75-CYe">
+                    <rect key="frame" x="0.0" y="199" width="600" height="401"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="401" id="q4t-7t-N5p"/>
+                    </constraints>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aQ-7D-D1o">
+                    <rect key="frame" x="77" y="170" width="86" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BVD-Be-Tjs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2qg-Pe-bcC"/>
+                <constraint firstAttribute="trailing" secondItem="BVD-Be-Tjs" secondAttribute="trailing" id="4eQ-ck-s9h"/>
+                <constraint firstItem="BVD-Be-Tjs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HyC-iT-Pkm"/>
+                <constraint firstItem="7aQ-7D-D1o" firstAttribute="leading" secondItem="bQW-Tk-xda" secondAttribute="trailing" constant="8" id="Kph-SK-aqp"/>
+                <constraint firstItem="xEm-75-CYe" firstAttribute="top" secondItem="bQW-Tk-xda" secondAttribute="bottom" constant="8" id="RFV-yr-f8t"/>
+                <constraint firstItem="bQW-Tk-xda" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ap0-h2-ikC"/>
+                <constraint firstItem="xEm-75-CYe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="elz-W3-u1b"/>
+                <constraint firstItem="xEm-75-CYe" firstAttribute="top" secondItem="7aQ-7D-D1o" secondAttribute="bottom" constant="8" id="hsZ-Yk-0ru"/>
+                <constraint firstAttribute="trailing" secondItem="xEm-75-CYe" secondAttribute="trailing" id="k4K-sY-CEn"/>
+                <constraint firstAttribute="bottom" secondItem="xEm-75-CYe" secondAttribute="bottom" id="n4W-U3-Ipn"/>
+                <constraint firstItem="xEm-75-CYe" firstAttribute="top" secondItem="BVD-Be-Tjs" secondAttribute="bottom" id="ufg-fB-Ngx"/>
+            </constraints>
+            <point key="canvasLocation" x="335" y="361"/>
         </view>
     </objects>
 </document>

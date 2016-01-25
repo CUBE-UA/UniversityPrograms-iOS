@@ -10,10 +10,15 @@ import UIKit
 
 class EventViewController: UIViewController {
 
+	@IBOutlet var eventImageView: UIImageView!
+	@IBOutlet var locationLabel: UILabel!
+	@IBOutlet var descriptionLabel: UILabel!
+	@IBOutlet var commentTableView: UITableView!
+	
 	override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 		
-		title = "Events"
+		title = "Event Name"
 		
 	}
 

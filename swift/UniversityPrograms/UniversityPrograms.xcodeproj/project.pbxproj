@@ -28,6 +28,8 @@
 		2E2C9BB21C532642009CF8FE /* WebOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9BAE1C532642009CF8FE /* WebOperation.m */; };
 		2E2C9BB31C532642009CF8FE /* Webservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9BB11C532642009CF8FE /* Webservice.m */; };
 		2E2C9BB61C5326E1009CF8FE /* NSObject+ObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9BB51C5326E1009CF8FE /* NSObject+ObjectMap.m */; };
+		2E853BC21C56D6B60042F46B /* AboutFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E853BC01C56D6B60042F46B /* AboutFooterCell.swift */; };
+		2E853BC31C56D6B60042F46B /* AboutFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E853BC11C56D6B60042F46B /* AboutFooterCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		2E2C9BB41C5326E1009CF8FE /* NSObject+ObjectMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ObjectMap.h"; sourceTree = "<group>"; };
 		2E2C9BB51C5326E1009CF8FE /* NSObject+ObjectMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ObjectMap.m"; sourceTree = "<group>"; };
 		2E2C9BB81C532738009CF8FE /* DTO_Headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTO_Headers.h; sourceTree = "<group>"; };
+		2E853BC01C56D6B60042F46B /* AboutFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutFooterCell.swift; sourceTree = "<group>"; };
+		2E853BC11C56D6B60042F46B /* AboutFooterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutFooterCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +184,7 @@
 		2E2C9B9B1C531BA0009CF8FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2E2C9B9C1C531BBF009CF8FE /* EventTableViewCell.swift */,
-				2E2C9B9D1C531BBF009CF8FE /* EventTableViewCell.xib */,
+				2E853BC41C56D77E0042F46B /* TableView */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -233,6 +236,33 @@
 				2E2C9BB81C532738009CF8FE /* DTO_Headers.h */,
 			);
 			name = DTOs;
+			sourceTree = "<group>";
+		};
+		2E853BB41C56D4730042F46B /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C9B9C1C531BBF009CF8FE /* EventTableViewCell.swift */,
+				2E2C9B9D1C531BBF009CF8FE /* EventTableViewCell.xib */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		2E853BB71C56D4C20042F46B /* About Footer */ = {
+			isa = PBXGroup;
+			children = (
+				2E853BC01C56D6B60042F46B /* AboutFooterCell.swift */,
+				2E853BC11C56D6B60042F46B /* AboutFooterCell.xib */,
+			);
+			name = "About Footer";
+			sourceTree = "<group>";
+		};
+		2E853BC41C56D77E0042F46B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2E853BB71C56D4C20042F46B /* About Footer */,
+				2E853BB41C56D4730042F46B /* Event */,
+			);
+			name = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +375,7 @@
 				2E2C9B9A1C5315A8009CF8FE /* AboutTableViewController.xib in Resources */,
 				2E2C9B921C52ECEF009CF8FE /* ProfileViewController.xib in Resources */,
 				2E2C9B601C52E779009CF8FE /* Assets.xcassets in Resources */,
+				2E853BC31C56D6B60042F46B /* AboutFooterCell.xib in Resources */,
 				2E2C9B9F1C531BBF009CF8FE /* EventTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +407,7 @@
 				2E2C9B991C5315A8009CF8FE /* AboutTableViewController.swift in Sources */,
 				2E2C9BA91C532526009CF8FE /* Webservice.swift in Sources */,
 				2E2C9B911C52ECEF009CF8FE /* ProfileViewController.swift in Sources */,
+				2E853BC21C56D6B60042F46B /* AboutFooterCell.swift in Sources */,
 				2E2C9BA61C532526009CF8FE /* Depot.swift in Sources */,
 				2E2C9BB31C532642009CF8FE /* Webservice.m in Sources */,
 				2E2C9B951C5313AD009CF8FE /* EventsTableViewController.swift in Sources */,

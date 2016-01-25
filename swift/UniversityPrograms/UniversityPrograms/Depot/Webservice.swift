@@ -42,7 +42,9 @@ class Webservice: NSObject, DepotInterface {
     }
     
     func getString() -> String {
+		
         return "A test string from the test webservice class"
+		
     }
     
     func getAsyncString(name: String, response: ((String) -> Void)) {
