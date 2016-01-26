@@ -18,8 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let eventsTableVC = EventsTableViewController(nibName: "EventsTableViewController", bundle: nil)
 		let eventsNavController = UINavigationController(rootViewController: eventsTableVC)
 		
+		let aboutTableVC = AboutTableViewController(nibName: "AboutTableViewController", bundle: nil)
+		let aboutNavController = UINavigationController(rootViewController: aboutTableVC)
+
+		let profileVC = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
+		let profileNavController = UINavigationController(rootViewController: profileVC)
+		
+		let tabBarController = UITabBarController()
+		tabBarController.viewControllers = [eventsNavController, aboutNavController, profileNavController]
+		
 		window = UIWindow(frame: UIScreen.mainScreen().bounds)
-		window?.rootViewController = eventsNavController
+		window?.rootViewController = tabBarController
 		window?.makeKeyAndVisible()
 		
 		return true

@@ -10,10 +10,20 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 		
 		title = "My Profile"
+		
+	}
+	
+	required init?(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+		
+	}
+	
+    override func viewDidLoad() {
+        super.viewDidLoad()
 		
     }
 

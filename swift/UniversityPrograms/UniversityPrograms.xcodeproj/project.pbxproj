@@ -169,14 +169,9 @@
 		2E2C9B8A1C52EA4B009CF8FE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2E2C9B931C5313AD009CF8FE /* EventsTableViewController.swift */,
-				2E2C9B941C5313AD009CF8FE /* EventsTableViewController.xib */,
-				2E2C9B861C52EA46009CF8FE /* EventViewController.swift */,
-				2E2C9B871C52EA46009CF8FE /* EventViewController.xib */,
-				2E2C9B971C5315A8009CF8FE /* AboutTableViewController.swift */,
-				2E2C9B981C5315A8009CF8FE /* AboutTableViewController.xib */,
-				2E2C9B8F1C52ECEF009CF8FE /* ProfileViewController.swift */,
-				2E2C9B901C52ECEF009CF8FE /* ProfileViewController.xib */,
+				2E975F591C580BD600F99958 /* Events */,
+				2E975F5C1C580C1300F99958 /* About */,
+				2E975F5D1C580C1B00F99958 /* Profile */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -263,6 +258,51 @@
 				2E853BB41C56D4730042F46B /* Event */,
 			);
 			name = TableView;
+			sourceTree = "<group>";
+		};
+		2E975F591C580BD600F99958 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				2E975F5A1C580BE200F99958 /* Events TableView */,
+				2E975F5B1C580BFA00F99958 /* Event */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		2E975F5A1C580BE200F99958 /* Events TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C9B931C5313AD009CF8FE /* EventsTableViewController.swift */,
+				2E2C9B941C5313AD009CF8FE /* EventsTableViewController.xib */,
+			);
+			name = "Events TableView";
+			sourceTree = "<group>";
+		};
+		2E975F5B1C580BFA00F99958 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C9B861C52EA46009CF8FE /* EventViewController.swift */,
+				2E2C9B871C52EA46009CF8FE /* EventViewController.xib */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		2E975F5C1C580C1300F99958 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C9B971C5315A8009CF8FE /* AboutTableViewController.swift */,
+				2E2C9B981C5315A8009CF8FE /* AboutTableViewController.xib */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		2E975F5D1C580C1B00F99958 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C9B8F1C52ECEF009CF8FE /* ProfileViewController.swift */,
+				2E2C9B901C52ECEF009CF8FE /* ProfileViewController.xib */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -12,11 +12,20 @@ class AboutTableViewController: UITableViewController {
 	
 	let aboutTitles = ["People", "About UP"]
 	
+	override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+		
+		title = "About"
+		
+	}
+
+	required init?(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+		
+	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-
-		title = "About"
-		navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "doneButtonTapped")
 		
 		tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "AboutCell")
 		tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "LocationCell")
@@ -95,11 +104,9 @@ class AboutTableViewController: UITableViewController {
 		
 	}
 	
-	//MARK: - NavBar
-	
-	func doneButtonTapped() {
+	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 		
-		dismissViewControllerAnimated(true, completion: nil)
+		tableView.deselectRowAtIndexPath(indexPath, animated: true)
 		
 	}
     
