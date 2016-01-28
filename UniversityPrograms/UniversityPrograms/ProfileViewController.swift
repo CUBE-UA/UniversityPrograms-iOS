@@ -10,6 +10,10 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+	@IBOutlet var nameField: UITextField!
+	@IBOutlet var emailField: UITextField!
+	@IBOutlet var idField: UITextField!
+	
 	override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 		
