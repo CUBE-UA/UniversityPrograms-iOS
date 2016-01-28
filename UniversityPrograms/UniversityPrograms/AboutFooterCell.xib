@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -14,27 +14,36 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMZ-6a-7Qv">
-                        <rect key="frame" x="89" y="7" width="67" height="30"/>
-                        <state key="normal" title="Facebook"/>
-                        <connections>
-                            <action selector="facebookButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ADO-es-Ia9"/>
-                        </connections>
-                    </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pde-Hf-XGU">
-                        <rect key="frame" x="174" y="7" width="48" height="30"/>
-                        <state key="normal" title="Twitter"/>
+                        <rect key="frame" x="200" y="7" width="30" height="30"/>
+                        <state key="normal" title="Tw"/>
                         <connections>
                             <action selector="twitterButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sQU-xj-UNv"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6Z-PF-eh6">
+                        <rect key="frame" x="145" y="7" width="30" height="30"/>
+                        <state key="normal" title="g+"/>
+                        <connections>
+                            <action selector="googleplusButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="o1p-Uo-aSM"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMZ-6a-7Qv">
+                        <rect key="frame" x="90" y="7" width="30" height="30"/>
+                        <state key="normal" title="Fb"/>
+                        <connections>
+                            <action selector="facebookButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ADO-es-Ia9"/>
                         </connections>
                     </button>
                 </subviews>
                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
-                    <constraint firstItem="vMZ-6a-7Qv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="f0L-jI-RDV"/>
-                    <constraint firstItem="Pde-Hf-XGU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="37.5" id="lcb-9d-Wja"/>
-                    <constraint firstItem="Pde-Hf-XGU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ooJ-Oa-0kp"/>
-                    <constraint firstItem="vMZ-6a-7Qv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-37.5" id="wBV-CQ-pj8"/>
+                    <constraint firstItem="Pde-Hf-XGU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5Ed-jA-iIz"/>
+                    <constraint firstItem="b6Z-PF-eh6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WEE-Z8-aHH"/>
+                    <constraint firstItem="Pde-Hf-XGU" firstAttribute="leading" secondItem="b6Z-PF-eh6" secondAttribute="trailing" constant="25" id="jVK-fq-SxF"/>
+                    <constraint firstItem="b6Z-PF-eh6" firstAttribute="leading" secondItem="vMZ-6a-7Qv" secondAttribute="trailing" constant="25" id="ldh-M3-rYT"/>
+                    <constraint firstItem="b6Z-PF-eh6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rQU-gz-dT8"/>
+                    <constraint firstItem="vMZ-6a-7Qv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rSM-UW-t40"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>

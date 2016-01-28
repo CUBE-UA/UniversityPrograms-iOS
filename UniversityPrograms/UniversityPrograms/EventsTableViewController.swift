@@ -28,7 +28,7 @@ class EventsTableViewController: UITableViewController {
 
 	override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 		
-		return 125
+		return 180
 		
 	}
 	
@@ -37,7 +37,7 @@ class EventsTableViewController: UITableViewController {
         return 1
 		
     }
-
+	
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		
         let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! EventTableViewCell

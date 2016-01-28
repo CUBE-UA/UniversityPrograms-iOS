@@ -27,6 +27,10 @@ class AboutFooterCell: UITableViewCell {
 		
 	}
 	
+	@IBAction func googleplusButtonTapped(sender: AnyObject) {
+		print("g+")
+	}
+	
 	@IBAction func twitterButtonTapped(sender: AnyObject) {
 		
 		print("twitter")

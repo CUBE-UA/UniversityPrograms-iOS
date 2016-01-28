@@ -74,6 +74,8 @@ class AboutTableViewController: UITableViewController {
 			
 		}
 	
+		cell!.accessoryType = .DisclosureIndicator
+		
         return cell!
 		
     }

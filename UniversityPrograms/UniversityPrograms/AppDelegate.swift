@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let aboutTableVC = AboutTableViewController(nibName: "AboutTableViewController", bundle: nil)
 		let aboutNavController = UINavigationController(rootViewController: aboutTableVC)
 
-		let profileVC = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
-		let profileNavController = UINavigationController(rootViewController: profileVC)
+		let profileTableVC = ProfileTableViewController(nibName: "ProfileTableViewController", bundle: nil)
+		let profileNavController = UINavigationController(rootViewController: profileTableVC)
 		
 		let tabBarController = UITabBarController()
 		tabBarController.viewControllers = [eventsNavController, aboutNavController, profileNavController]

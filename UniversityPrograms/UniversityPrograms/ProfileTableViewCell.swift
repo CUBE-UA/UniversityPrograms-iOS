@@ -1,18 +1,17 @@
 //
-//  EventTableViewCell.swift
+//  ProfileTableViewCell.swift
 //  UniversityPrograms
 //
-//  Created by greyson on 1/22/16.
+//  Created by greyson on 1/28/16.
 //  Copyright © 2016 Greyson Wright. All rights reserved.
 //
 
 import UIKit
 
-class EventTableViewCell: UITableViewCell {
+class ProfileTableViewCell: UITableViewCell {
 
-	@IBOutlet var eventImageView: UIImageView!
-	@IBOutlet var nameLabel: UILabel!
-	@IBOutlet var timeLabel: UILabel!
+	@IBOutlet var mainLabel: UILabel!
+	@IBOutlet var valueLabel: UILabel!
 	
     override func awakeFromNib() {
         super.awakeFromNib()
