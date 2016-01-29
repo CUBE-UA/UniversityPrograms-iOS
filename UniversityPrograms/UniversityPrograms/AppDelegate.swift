@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let eventsTableVC = EventsTableViewController(nibName: "EventsTableViewController", bundle: nil)
 		let eventsNavController = UINavigationController(rootViewController: eventsTableVC)
 		
+		let submitEventTableVC = SubmitEventTableViewController(nibName: "SubmitEventTableViewController", bundle: nil)
+		let submitEventNavController = UINavigationController(rootViewController: submitEventTableVC)
+		
 		let aboutTableVC = AboutTableViewController(nibName: "AboutTableViewController", bundle: nil)
 		let aboutNavController = UINavigationController(rootViewController: aboutTableVC)
 
@@ -25,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let profileNavController = UINavigationController(rootViewController: profileTableVC)
 		
 		let tabBarController = UITabBarController()
-		tabBarController.viewControllers = [eventsNavController, aboutNavController, profileNavController]
+		tabBarController.viewControllers = [eventsNavController, submitEventNavController, aboutNavController, profileNavController]
 		
 		window = UIWindow(frame: UIScreen.mainScreen().bounds)
 		window?.rootViewController = tabBarController

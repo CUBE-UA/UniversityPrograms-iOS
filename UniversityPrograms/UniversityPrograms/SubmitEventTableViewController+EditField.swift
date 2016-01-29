@@ -1,5 +1,5 @@
 //
-//  ProfileTableViewController+EditField.swift
+//  SubmitEventTableViewController+EditField.swift
 //  UniversityPrograms
 //
 //  Created by greyson on 1/29/16.
@@ -8,13 +8,19 @@
 
 import UIKit
 
-extension ProfileTableViewController {
+extension SubmitEventTableViewController {
 
-	//MARK: EditFieldDelegate
-	
 	func fieldSaved(field: String, value: String) {
 		
-		getFieldValues()
+		for var i = 0; i < fieldNames.count; ++i {
+			
+			if fieldNames[i] == field {
+				
+				keys[i] = value
+				
+			}
+			
+		}
 		
 		tableView.reloadData()
 		

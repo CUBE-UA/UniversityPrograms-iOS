@@ -1,14 +1,14 @@
 //
-//  ProfileTableViewCell.swift
+//  FieldTableViewCell.swift
 //  UniversityPrograms
 //
-//  Created by greyson on 1/28/16.
+//  Created by greyson on 1/29/16.
 //  Copyright © 2016 Greyson Wright. All rights reserved.
 //
 
 import UIKit
 
-class ProfileTableViewCell: UITableViewCell {
+class FieldTableViewCell: UITableViewCell {
 
 	@IBOutlet var mainLabel: UILabel!
 	@IBOutlet var valueLabel: UILabel!

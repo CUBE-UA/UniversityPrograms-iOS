@@ -10,7 +10,6 @@ import UIKit
 
 extension ProfileTableViewController {
 
-	
 	// MARK: - Table view data source
 	
 	override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -49,9 +48,9 @@ extension ProfileTableViewController {
 		
 		if indexPath.section == 0 {
 			
-			cell = tableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileTableViewCell
-			(cell as! ProfileTableViewCell).mainLabel.text = Array(profileFields.keys)[indexPath.row]
-			(cell as! ProfileTableViewCell).valueLabel.text = profileFields[Array(profileFields.keys)[indexPath.row]]
+			cell = tableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! FieldTableViewCell
+			(cell as! FieldTableViewCell).mainLabel.text = profileFields[indexPath.row]
+			(cell as! FieldTableViewCell).valueLabel.text = profileKeys[indexPath.row]
 			
 		} else {
 			
@@ -95,9 +94,8 @@ extension ProfileTableViewController {
 			
 			shouldReloadTableView = true
 			
-			let editFieldVC = EditFieldViewController(nibName: "EditFieldViewController", bundle: nil)
+			let editFieldVC = EditFieldViewController(title: profileFields[indexPath.row], text: profileKeys[indexPath.row])
 			editFieldVC.delegate = self
-			editFieldVC.title = Array(profileFields.keys)[indexPath.row]
 			navigationController?.pushViewController(editFieldVC, animated: true)
 			
 		} else {

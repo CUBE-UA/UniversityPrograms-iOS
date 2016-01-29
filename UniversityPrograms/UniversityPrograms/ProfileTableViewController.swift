@@ -10,7 +10,8 @@ import UIKit
 
 class ProfileTableViewController: UITableViewController, EditFieldDelegate {
 	
-	var profileFields: [String : String] = ["Email" : "", "Name" : "", "CWID" : ""]
+	let profileFields = ["Email", "Name", "CWID"]
+	var profileKeys = ["", "", ""]
 	var shouldReloadTableView = false
 	
 	override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -28,7 +29,7 @@ class ProfileTableViewController: UITableViewController, EditFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		tableView.registerNib(UINib(nibName: "ProfileTableViewCell", bundle: nil), forCellReuseIdentifier: "ProfileCell")
+		tableView.registerNib(UINib(nibName: "FieldTableViewCell", bundle: nil), forCellReuseIdentifier: "ProfileCell")
 		tableView.registerNib(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "EventCell")
 		
 		getFieldValues()
@@ -42,13 +43,13 @@ class ProfileTableViewController: UITableViewController, EditFieldDelegate {
 
 	func getFieldValues() {
 		
-		for key: String in profileFields.keys {
+		for var i = 0; i < profileFields.count; ++i {
 			
-			let value = NSUserDefaults.standardUserDefaults().valueForKey(key) as? String
+			let value = NSUserDefaults.standardUserDefaults().valueForKey(profileFields[i]) as? String
 			
 			if value != nil {
 				
-				profileFields[key] = value
+				profileKeys[i] = value!
 				
 			}
 			
