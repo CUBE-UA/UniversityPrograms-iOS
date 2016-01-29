@@ -20,12 +20,6 @@
 		2E2C9B9A1C5315A8009CF8FE /* AboutTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C9B981C5315A8009CF8FE /* AboutTableViewController.xib */; };
 		2E2C9B9E1C531BBF009CF8FE /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9B9C1C531BBF009CF8FE /* EventTableViewCell.swift */; };
 		2E2C9B9F1C531BBF009CF8FE /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C9B9D1C531BBF009CF8FE /* EventTableViewCell.xib */; };
-		2E2C9BA61C532526009CF8FE /* Depot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9BA21C532526009CF8FE /* Depot.swift */; };
-		2E2C9BA81C532526009CF8FE /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9BA41C532526009CF8FE /* TestData.swift */; };
-		2E2C9BA91C532526009CF8FE /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9BA51C532526009CF8FE /* Webservice.swift */; };
-		2E2C9BB21C532642009CF8FE /* WebOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9BAE1C532642009CF8FE /* WebOperation.m */; };
-		2E2C9BB31C532642009CF8FE /* Webservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9BB11C532642009CF8FE /* Webservice.m */; };
-		2E2C9BB61C5326E1009CF8FE /* NSObject+ObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9BB51C5326E1009CF8FE /* NSObject+ObjectMap.m */; };
 		2E7D994D1C5AAF9F00E91577 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D994B1C5AAF9F00E91577 /* ProfileTableViewController.swift */; };
 		2E7D994E1C5AAF9F00E91577 /* ProfileTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D994C1C5AAF9F00E91577 /* ProfileTableViewController.xib */; };
 		2E7D99511C5AB2AB00E91577 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D994F1C5AB2AB00E91577 /* ProfileTableViewCell.swift */; };
@@ -77,18 +71,7 @@
 		2E2C9B981C5315A8009CF8FE /* AboutTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutTableViewController.xib; sourceTree = "<group>"; };
 		2E2C9B9C1C531BBF009CF8FE /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		2E2C9B9D1C531BBF009CF8FE /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
-		2E2C9BA21C532526009CF8FE /* Depot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Depot.swift; path = Depot/Depot.swift; sourceTree = "<group>"; };
-		2E2C9BA41C532526009CF8FE /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestData.swift; path = Depot/TestData.swift; sourceTree = "<group>"; };
-		2E2C9BA51C532526009CF8FE /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Webservice.swift; path = Depot/Webservice.swift; sourceTree = "<group>"; };
 		2E2C9BAC1C532641009CF8FE /* UniversityPrograms-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UniversityPrograms-Bridging-Header.h"; sourceTree = "<group>"; };
-		2E2C9BAD1C532642009CF8FE /* WebOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOperation.h; sourceTree = "<group>"; };
-		2E2C9BAE1C532642009CF8FE /* WebOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOperation.m; sourceTree = "<group>"; };
-		2E2C9BAF1C532642009CF8FE /* WebOperationHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOperationHeaders.h; sourceTree = "<group>"; };
-		2E2C9BB01C532642009CF8FE /* Webservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Webservice.h; sourceTree = "<group>"; };
-		2E2C9BB11C532642009CF8FE /* Webservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Webservice.m; sourceTree = "<group>"; };
-		2E2C9BB41C5326E1009CF8FE /* NSObject+ObjectMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ObjectMap.h"; sourceTree = "<group>"; };
-		2E2C9BB51C5326E1009CF8FE /* NSObject+ObjectMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ObjectMap.m"; sourceTree = "<group>"; };
-		2E2C9BB81C532738009CF8FE /* DTO_Headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTO_Headers.h; sourceTree = "<group>"; };
 		2E7D994B1C5AAF9F00E91577 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		2E7D994C1C5AAF9F00E91577 /* ProfileTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewController.xib; sourceTree = "<group>"; };
 		2E7D994F1C5AB2AB00E91577 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
@@ -153,8 +136,7 @@
 			children = (
 				2E2C9BAC1C532641009CF8FE /* UniversityPrograms-Bridging-Header.h */,
 				2E2C9B581C52E779009CF8FE /* AppDelegate.swift */,
-				2E2C9BAA1C5325C1009CF8FE /* Libs */,
-				2E2C9BA01C53250A009CF8FE /* Webservice */,
+				2E9D87BF1C5BF98000AA7338 /* libs */,
 				2E2C9B9B1C531BA0009CF8FE /* Views */,
 				2E2C9B8A1C52EA4B009CF8FE /* Controllers */,
 				2E2C9B5F1C52E779009CF8FE /* Assets.xcassets */,
@@ -198,55 +180,6 @@
 				2E853BC41C56D77E0042F46B /* TableView */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		2E2C9BA01C53250A009CF8FE /* Webservice */ = {
-			isa = PBXGroup;
-			children = (
-				2E2C9BA21C532526009CF8FE /* Depot.swift */,
-				2E2C9BA41C532526009CF8FE /* TestData.swift */,
-				2E2C9BA51C532526009CF8FE /* Webservice.swift */,
-				2E2C9BB91C532746009CF8FE /* DTOs */,
-			);
-			name = Webservice;
-			sourceTree = "<group>";
-		};
-		2E2C9BAA1C5325C1009CF8FE /* Libs */ = {
-			isa = PBXGroup;
-			children = (
-				2E2C9BB71C5326E6009CF8FE /* NSObject+ObjectMap */,
-				2E2C9BAB1C53261C009CF8FE /* WebserviceTemplate */,
-			);
-			name = Libs;
-			sourceTree = "<group>";
-		};
-		2E2C9BAB1C53261C009CF8FE /* WebserviceTemplate */ = {
-			isa = PBXGroup;
-			children = (
-				2E2C9BAD1C532642009CF8FE /* WebOperation.h */,
-				2E2C9BAE1C532642009CF8FE /* WebOperation.m */,
-				2E2C9BAF1C532642009CF8FE /* WebOperationHeaders.h */,
-				2E2C9BB01C532642009CF8FE /* Webservice.h */,
-				2E2C9BB11C532642009CF8FE /* Webservice.m */,
-			);
-			name = WebserviceTemplate;
-			sourceTree = "<group>";
-		};
-		2E2C9BB71C5326E6009CF8FE /* NSObject+ObjectMap */ = {
-			isa = PBXGroup;
-			children = (
-				2E2C9BB41C5326E1009CF8FE /* NSObject+ObjectMap.h */,
-				2E2C9BB51C5326E1009CF8FE /* NSObject+ObjectMap.m */,
-			);
-			name = "NSObject+ObjectMap";
-			sourceTree = "<group>";
-		};
-		2E2C9BB91C532746009CF8FE /* DTOs */ = {
-			isa = PBXGroup;
-			children = (
-				2E2C9BB81C532738009CF8FE /* DTO_Headers.h */,
-			);
-			name = DTOs;
 			sourceTree = "<group>";
 		};
 		2E7D99531C5AB2B000E91577 /* Profile */ = {
@@ -351,6 +284,13 @@
 				2E7D99551C5AC42800E91577 /* Edit */,
 			);
 			name = Profile;
+			sourceTree = "<group>";
+		};
+		2E9D87BF1C5BF98000AA7338 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,24 +432,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E9D87BA1C5BF6E000AA7338 /* ProfileTableViewController+EditField.swift in Sources */,
-				2E2C9BA81C532526009CF8FE /* TestData.swift in Sources */,
 				2E7D99511C5AB2AB00E91577 /* ProfileTableViewCell.swift in Sources */,
 				2E2C9B9E1C531BBF009CF8FE /* EventTableViewCell.swift in Sources */,
 				2E9D87BE1C5BF8D400AA7338 /* EventsTableViewController+TableView.swift in Sources */,
 				2E2C9B591C52E779009CF8FE /* AppDelegate.swift in Sources */,
 				2E2C9B991C5315A8009CF8FE /* AboutTableViewController.swift in Sources */,
-				2E2C9BA91C532526009CF8FE /* Webservice.swift in Sources */,
 				2E853BC21C56D6B60042F46B /* AboutFooterCell.swift in Sources */,
-				2E2C9BA61C532526009CF8FE /* Depot.swift in Sources */,
 				2E7D995C1C5AC6B000E91577 /* EditFieldViewController.swift in Sources */,
-				2E2C9BB31C532642009CF8FE /* Webservice.m in Sources */,
 				2E9D87BC1C5BF7C000AA7338 /* AboutTableViewController+TableView.swift in Sources */,
 				2E7D994D1C5AAF9F00E91577 /* ProfileTableViewController.swift in Sources */,
 				2E9D87B81C5BF6BA00AA7338 /* ProfileTableViewController+TableView.swift in Sources */,
 				2E2C9B951C5313AD009CF8FE /* EventsTableViewController.swift in Sources */,
-				2E2C9BB21C532642009CF8FE /* WebOperation.m in Sources */,
 				2E2C9B881C52EA46009CF8FE /* EventViewController.swift in Sources */,
-				2E2C9BB61C5326E1009CF8FE /* NSObject+ObjectMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
