@@ -17,7 +17,7 @@ class SubmitEventTableViewController: UITableViewController, EditFieldDelegate {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 		
 		title = "Submit Event"
-		navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Submit", style: .Plain, target: self, action: Selector("submitButtonTapped"))
+		navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Submit", style: .Plain, target: self, action: "submitButtonTapped")
 		navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: nil, action: nil)
 		
 	}

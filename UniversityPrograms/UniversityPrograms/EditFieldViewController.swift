@@ -36,7 +36,7 @@ class EditFieldViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Save, target: self, action: Selector("saveButtonTapped"))
+		navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Save, target: self, action: "saveButtonTapped")
 		
 		textView.text = textViewText
 		
@@ -66,16 +66,5 @@ class EditFieldViewController: UIViewController, UITextViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-	
-	func saveButtonTapped() {
-		
-		NSUserDefaults.standardUserDefaults().setValue(textView.text, forKey: title!)
-		NSUserDefaults.standardUserDefaults().synchronize()
-		
-		navigationController?.popToRootViewControllerAnimated(true)
-		
-		delegate?.fieldSaved(title!, value: textView.text)
-		
-	}
 	
 }

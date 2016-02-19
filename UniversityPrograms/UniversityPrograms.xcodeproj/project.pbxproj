@@ -28,6 +28,7 @@
 		2E853BC31C56D6B60042F46B /* AboutFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E853BC11C56D6B60042F46B /* AboutFooterCell.xib */; };
 		2E9228011C77A40200DEA0C8 /* SubmitEventTableViewController+ButtonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9228001C77A40200DEA0C8 /* SubmitEventTableViewController+ButtonActions.swift */; };
 		2E9228031C77A47700DEA0C8 /* AboutFooterCell+ButtonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9228021C77A47700DEA0C8 /* AboutFooterCell+ButtonActions.swift */; };
+		2E9228051C77A6AD00DEA0C8 /* EditFieldViewController+ButtonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9228041C77A6AD00DEA0C8 /* EditFieldViewController+ButtonActions.swift */; };
 		2E9D87B81C5BF6BA00AA7338 /* ProfileTableViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D87B71C5BF6BA00AA7338 /* ProfileTableViewController+TableView.swift */; };
 		2E9D87BA1C5BF6E000AA7338 /* ProfileTableViewController+EditField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D87B91C5BF6E000AA7338 /* ProfileTableViewController+EditField.swift */; };
 		2E9D87BC1C5BF7C000AA7338 /* AboutTableViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D87BB1C5BF7C000AA7338 /* AboutTableViewController+TableView.swift */; };
@@ -86,6 +87,7 @@
 		2E853BC11C56D6B60042F46B /* AboutFooterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutFooterCell.xib; sourceTree = "<group>"; };
 		2E9228001C77A40200DEA0C8 /* SubmitEventTableViewController+ButtonActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SubmitEventTableViewController+ButtonActions.swift"; sourceTree = "<group>"; };
 		2E9228021C77A47700DEA0C8 /* AboutFooterCell+ButtonActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AboutFooterCell+ButtonActions.swift"; sourceTree = "<group>"; };
+		2E9228041C77A6AD00DEA0C8 /* EditFieldViewController+ButtonActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EditFieldViewController+ButtonActions.swift"; sourceTree = "<group>"; };
 		2E9D87B71C5BF6BA00AA7338 /* ProfileTableViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfileTableViewController+TableView.swift"; sourceTree = "<group>"; };
 		2E9D87B91C5BF6E000AA7338 /* ProfileTableViewController+EditField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfileTableViewController+EditField.swift"; sourceTree = "<group>"; };
 		2E9D87BB1C5BF7C000AA7338 /* AboutTableViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AboutTableViewController+TableView.swift"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				2E7D995A1C5AC6B000E91577 /* EditFieldViewController.swift */,
+				2E9228041C77A6AD00DEA0C8 /* EditFieldViewController+ButtonActions.swift */,
 				2E9D87CE1C5C14D600AA7338 /* EditFieldViewController+TextView.swift */,
 				2E7D995B1C5AC6B000E91577 /* EditFieldViewController.xib */,
 			);
@@ -474,6 +477,7 @@
 				2E9D87CD1C5C0BCB00AA7338 /* SubmitEventTableViewController+EditField.swift in Sources */,
 				2E9D87CF1C5C14D600AA7338 /* EditFieldViewController+TextView.swift in Sources */,
 				2E9D87B81C5BF6BA00AA7338 /* ProfileTableViewController+TableView.swift in Sources */,
+				2E9228051C77A6AD00DEA0C8 /* EditFieldViewController+ButtonActions.swift in Sources */,
 				2E9D87C61C5BFB2300AA7338 /* SubmitEventTableViewController+TableView.swift in Sources */,
 				2E2C9B951C5313AD009CF8FE /* EventsTableViewController.swift in Sources */,
 				2E2C9B881C52EA46009CF8FE /* EventViewController.swift in Sources */,
