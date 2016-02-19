@@ -94,7 +94,7 @@ extension ProfileTableViewController {
 			
 			shouldReloadTableView = true
 			
-			let editFieldVC = EditFieldViewController(title: profileFields[indexPath.row], text: profileKeys[indexPath.row])
+			let editFieldVC = EditFieldViewController(nibName: "EditFieldViewController", bundle: nil, title: profileFields[indexPath.row], text: profileKeys[indexPath.row])
 			editFieldVC.delegate = self
 			navigationController?.pushViewController(editFieldVC, animated: true)
 			

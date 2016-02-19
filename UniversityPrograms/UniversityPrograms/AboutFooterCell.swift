@@ -20,21 +20,5 @@ class AboutFooterCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-	@IBAction func facebookButtonTapped(sender: AnyObject) {
-		
-		print("fb")
-		
-	}
-	
-	@IBAction func googleplusButtonTapped(sender: AnyObject) {
-		print("g+")
-	}
-	
-	@IBAction func twitterButtonTapped(sender: AnyObject) {
-		
-		print("twitter")
-		
-	}
 	
 }

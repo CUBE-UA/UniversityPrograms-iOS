@@ -38,15 +38,5 @@ class SubmitEventTableViewController: UITableViewController, EditFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-	
-	func submitButtonTapped() {
-		
-		for var i = 0; i < keys.count; ++i {
-			
-			keys[i] = ""
-			
-		}
-		
-	}
 
 }

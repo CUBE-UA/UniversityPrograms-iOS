@@ -51,7 +51,7 @@ extension SubmitEventTableViewController {
 		
 		tableView.deselectRowAtIndexPath(indexPath, animated: true)
 		
-		let editFieldVC = EditFieldViewController(title: fieldNames[indexPath.section + indexPath.row], text: keys[indexPath.section + indexPath.row])
+		let editFieldVC = EditFieldViewController(nibName: "EditFieldViewController", bundle: nil, title: fieldNames[indexPath.section + indexPath.row], text: keys[indexPath.section + indexPath.row])
 		editFieldVC.delegate = self
 		navigationController?.pushViewController(editFieldVC, animated: true)
 		

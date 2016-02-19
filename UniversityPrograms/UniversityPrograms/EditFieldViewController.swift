@@ -21,12 +21,11 @@ class EditFieldViewController: UIViewController, UITextViewDelegate {
 	var delegate: EditFieldDelegate?
 	var textViewText: String?
 	
-	init(title: String, text: String?) {
-		super.init(nibName: "EditFieldViewController" , bundle: nil)
+	init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?, title: String, text: String?) {
+		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 		
 		self.title = title
 		textViewText = text
-		
 	}
 	
 	required init?(coder aDecoder: NSCoder) {

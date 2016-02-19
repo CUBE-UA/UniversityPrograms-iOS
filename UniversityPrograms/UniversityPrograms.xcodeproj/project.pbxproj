@@ -26,6 +26,8 @@
 		2E7D995D1C5AC6B000E91577 /* EditFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7D995B1C5AC6B000E91577 /* EditFieldViewController.xib */; };
 		2E853BC21C56D6B60042F46B /* AboutFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E853BC01C56D6B60042F46B /* AboutFooterCell.swift */; };
 		2E853BC31C56D6B60042F46B /* AboutFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E853BC11C56D6B60042F46B /* AboutFooterCell.xib */; };
+		2E9228011C77A40200DEA0C8 /* SubmitEventTableViewController+ButtonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9228001C77A40200DEA0C8 /* SubmitEventTableViewController+ButtonActions.swift */; };
+		2E9228031C77A47700DEA0C8 /* AboutFooterCell+ButtonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9228021C77A47700DEA0C8 /* AboutFooterCell+ButtonActions.swift */; };
 		2E9D87B81C5BF6BA00AA7338 /* ProfileTableViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D87B71C5BF6BA00AA7338 /* ProfileTableViewController+TableView.swift */; };
 		2E9D87BA1C5BF6E000AA7338 /* ProfileTableViewController+EditField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D87B91C5BF6E000AA7338 /* ProfileTableViewController+EditField.swift */; };
 		2E9D87BC1C5BF7C000AA7338 /* AboutTableViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D87BB1C5BF7C000AA7338 /* AboutTableViewController+TableView.swift */; };
@@ -82,6 +84,8 @@
 		2E7D995B1C5AC6B000E91577 /* EditFieldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditFieldViewController.xib; sourceTree = "<group>"; };
 		2E853BC01C56D6B60042F46B /* AboutFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutFooterCell.swift; sourceTree = "<group>"; };
 		2E853BC11C56D6B60042F46B /* AboutFooterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutFooterCell.xib; sourceTree = "<group>"; };
+		2E9228001C77A40200DEA0C8 /* SubmitEventTableViewController+ButtonActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SubmitEventTableViewController+ButtonActions.swift"; sourceTree = "<group>"; };
+		2E9228021C77A47700DEA0C8 /* AboutFooterCell+ButtonActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AboutFooterCell+ButtonActions.swift"; sourceTree = "<group>"; };
 		2E9D87B71C5BF6BA00AA7338 /* ProfileTableViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfileTableViewController+TableView.swift"; sourceTree = "<group>"; };
 		2E9D87B91C5BF6E000AA7338 /* ProfileTableViewController+EditField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfileTableViewController+EditField.swift"; sourceTree = "<group>"; };
 		2E9D87BB1C5BF7C000AA7338 /* AboutTableViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AboutTableViewController+TableView.swift"; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 		2E2C9B8A1C52EA4B009CF8FE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2E7D99551C5AC42800E91577 /* Edit Field */,
 				2E975F591C580BD600F99958 /* Events */,
 				2E9D87C41C5BFA4F00AA7338 /* Submit Event */,
 				2E975F5C1C580C1300F99958 /* About */,
@@ -194,22 +199,22 @@
 		2E7D99541C5AC41A00E91577 /* Profile TableView */ = {
 			isa = PBXGroup;
 			children = (
+				2E7D994B1C5AAF9F00E91577 /* ProfileTableViewController.swift */,
 				2E9D87B71C5BF6BA00AA7338 /* ProfileTableViewController+TableView.swift */,
 				2E9D87B91C5BF6E000AA7338 /* ProfileTableViewController+EditField.swift */,
-				2E7D994B1C5AAF9F00E91577 /* ProfileTableViewController.swift */,
 				2E7D994C1C5AAF9F00E91577 /* ProfileTableViewController.xib */,
 			);
 			name = "Profile TableView";
 			sourceTree = "<group>";
 		};
-		2E7D99551C5AC42800E91577 /* Edit */ = {
+		2E7D99551C5AC42800E91577 /* Edit Field */ = {
 			isa = PBXGroup;
 			children = (
-				2E9D87CE1C5C14D600AA7338 /* EditFieldViewController+TextView.swift */,
 				2E7D995A1C5AC6B000E91577 /* EditFieldViewController.swift */,
+				2E9D87CE1C5C14D600AA7338 /* EditFieldViewController+TextView.swift */,
 				2E7D995B1C5AC6B000E91577 /* EditFieldViewController.xib */,
 			);
-			name = Edit;
+			name = "Edit Field";
 			sourceTree = "<group>";
 		};
 		2E853BB41C56D4730042F46B /* Event */ = {
@@ -225,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				2E853BC01C56D6B60042F46B /* AboutFooterCell.swift */,
+				2E9228021C77A47700DEA0C8 /* AboutFooterCell+ButtonActions.swift */,
 				2E853BC11C56D6B60042F46B /* AboutFooterCell.xib */,
 			);
 			name = "About Footer";
@@ -252,8 +258,8 @@
 		2E975F5A1C580BE200F99958 /* Events TableView */ = {
 			isa = PBXGroup;
 			children = (
-				2E9D87BD1C5BF8D300AA7338 /* EventsTableViewController+TableView.swift */,
 				2E2C9B931C5313AD009CF8FE /* EventsTableViewController.swift */,
+				2E9D87BD1C5BF8D300AA7338 /* EventsTableViewController+TableView.swift */,
 				2E2C9B941C5313AD009CF8FE /* EventsTableViewController.xib */,
 			);
 			name = "Events TableView";
@@ -271,8 +277,8 @@
 		2E975F5C1C580C1300F99958 /* About */ = {
 			isa = PBXGroup;
 			children = (
-				2E9D87BB1C5BF7C000AA7338 /* AboutTableViewController+TableView.swift */,
 				2E2C9B971C5315A8009CF8FE /* AboutTableViewController.swift */,
+				2E9D87BB1C5BF7C000AA7338 /* AboutTableViewController+TableView.swift */,
 				2E2C9B981C5315A8009CF8FE /* AboutTableViewController.xib */,
 			);
 			name = About;
@@ -282,7 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				2E7D99541C5AC41A00E91577 /* Profile TableView */,
-				2E7D99551C5AC42800E91577 /* Edit */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -297,9 +302,10 @@
 		2E9D87C41C5BFA4F00AA7338 /* Submit Event */ = {
 			isa = PBXGroup;
 			children = (
+				2E9D87C01C5BFA4900AA7338 /* SubmitEventTableViewController.swift */,
+				2E9228001C77A40200DEA0C8 /* SubmitEventTableViewController+ButtonActions.swift */,
 				2E9D87CC1C5C0BCB00AA7338 /* SubmitEventTableViewController+EditField.swift */,
 				2E9D87C51C5BFB2300AA7338 /* SubmitEventTableViewController+TableView.swift */,
-				2E9D87C01C5BFA4900AA7338 /* SubmitEventTableViewController.swift */,
 				2E9D87C11C5BFA4900AA7338 /* SubmitEventTableViewController.xib */,
 			);
 			name = "Submit Event";
@@ -457,6 +463,7 @@
 				2E2C9B9E1C531BBF009CF8FE /* EventTableViewCell.swift in Sources */,
 				2E9D87BE1C5BF8D400AA7338 /* EventsTableViewController+TableView.swift in Sources */,
 				2E2C9B591C52E779009CF8FE /* AppDelegate.swift in Sources */,
+				2E9228011C77A40200DEA0C8 /* SubmitEventTableViewController+ButtonActions.swift in Sources */,
 				2E2C9B991C5315A8009CF8FE /* AboutTableViewController.swift in Sources */,
 				2E853BC21C56D6B60042F46B /* AboutFooterCell.swift in Sources */,
 				2E7D995C1C5AC6B000E91577 /* EditFieldViewController.swift in Sources */,
@@ -470,6 +477,7 @@
 				2E9D87C61C5BFB2300AA7338 /* SubmitEventTableViewController+TableView.swift in Sources */,
 				2E2C9B951C5313AD009CF8FE /* EventsTableViewController.swift in Sources */,
 				2E2C9B881C52EA46009CF8FE /* EventViewController.swift in Sources */,
+				2E9228031C77A47700DEA0C8 /* AboutFooterCell+ButtonActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
